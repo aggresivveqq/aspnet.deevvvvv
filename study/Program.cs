@@ -131,7 +131,7 @@ async Task UpdatePerson(HttpResponse response, HttpRequest request)
     catch (Exception)
     {
         response.StatusCode = 400;
-        await response.WriteAsJsonAsync(new { message = "Bad request." });
+        await response.WriteAsJsonAsync(new { message = "Bad request. " });
     }
 }
 public class Person
